@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>STICK CHASE</title>
+<script>
+
+// NAMES FOR THE PICTURES
+var description = new Array("Phillip Stickman", "Eraser of Death!", "Jump Over Markers", "Don't Mess Up");
+var pictures = new Array(3);
+var counter = 0;
+
+
+function initialize(){
+  
+  //PUT PICTURES HERE
+  pictures[0] = new Image(100, 100);
+  pictures[0].src = "Stickman1.jpg";
+  pictures[1] = new Image(100, 100);
+  pictures[1].src = "Stickman2.jpg";
+  pictures[2] = new Image(100, 100);
+  pictures[2].src = "Stickman3.jpg";
+  pictures[3] = new Image(100, 100);
+  pictures[3].src = "Stickman4.jpg";
+
+}  
+
+function upDate(){
+  
+  counter++;
+  if (counter > 3){
+    counter = 0;
+  } 
+  document.imgDisplay.src = pictures[counter].src;
+  document.myForm.txtDescription.value = description[counter];
+} 
+
+</script>
+</head>
+
+<body onLoad = "initialize()">
+<body style="background-color:lightblue;">
+<center>
+<h1 style="font-family:castellar;color:maroon;font-size:500%;">STICK CHASE<hr></h1>
+<form name = "myForm">
+<img src = "Stickman1.jpg"
+     name = "imgDisplay"
+     height = 400
+     width = 500>
+<br>
+
+<input type = "text"
+       name = "txtDescription"
+       value = "Phillip Stickman">
+<br>
+<input type = "button"
+       value = "next"
+       onClick = "upDate()">
+</form>
+</center>
+<hr>
+<p>
+<script>
+
+var a = document.createElement('a');
+var linkText = document.createTextNode("Click to main site");
+a.appendChild(linkText);
+a.title = "Click to main site";
+a.href = "http://cs1.whitworth.edu/ablair18/Darn%20Anything%20Website/ClassWebsite.html";
+document.body.appendChild(a);
+
+</script>
+</p>
+</body>
+</html>
+
+
