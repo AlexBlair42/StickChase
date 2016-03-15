@@ -30,7 +30,8 @@
         android:layout_marginBottom="31dp"
         android:textColor="#000000"
         android:textSize="15dp"
-        android:backgroundTint="#9a9a9a" />
+        android:backgroundTint="#9a9a9a"
+        android:onClick="buttonOnClick" />
 
     <Button
         android:layout_width="wrap_content"
