@@ -9,7 +9,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation = "landscape"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +21,9 @@
         <activity
             android:name=".Game"
             android:label="@string/title_activity_game"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation = "landscape"
+            >
             <intent-filter>
                 <action android:name="com.dna.stickchase.stickchase.Game" />
 
