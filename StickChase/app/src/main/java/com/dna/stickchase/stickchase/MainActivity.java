@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         OnClickButtonListener();
     }
 
+
+
     // Creates a function that makes the "New Game" button start the Game activity
 
     public void OnClickButtonListener(){
