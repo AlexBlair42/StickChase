@@ -7,9 +7,6 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-/**
- * Created by Alex on 4/5/2016.
- */
 
 public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
 
@@ -54,7 +51,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
     @Override
     public void surfaceCreated(SurfaceHolder holder){
 
-        bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.testbackground));
+        bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.background));
 
         // we can safely start the game loop
 
