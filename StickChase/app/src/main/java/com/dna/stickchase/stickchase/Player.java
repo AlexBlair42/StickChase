@@ -51,7 +51,7 @@ public class Player extends GameObject {
         }
         animation.update();
 
-        if(up)
+        /*if(up)
         {
             dy = (int)(dya-=1.1);
 
@@ -65,7 +65,7 @@ public class Player extends GameObject {
 
         y+=dy*2;
         dy = 0;
-
+*/
     }
     public void draw(Canvas canvas)
     {
