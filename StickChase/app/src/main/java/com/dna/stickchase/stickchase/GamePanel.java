@@ -14,7 +14,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
     private Background bg;
     public static final int WIDTH = 2048;
     public static final int HEIGHT = 1536;
-    public static final int MOVESPEED = -5;
+    public static final int MOVESPEED = -10;
     private Player player;
 
 

@@ -52,16 +52,16 @@ public class Player extends GameObject {
         animation.update();
 
         if(up){
-            dy = (int)(dya-=0.5);
+            dy += (int)(dya-=5);
         }
-        else{
+       /* else{
             dy = (int)(dya+=0.5);
         }
-
-        if(dy>20)dy=14;
+*/
+       if(dy>20)dy=14;
         if(dy<-20)dy = -14;
 
-        y+= dy*2;
+        y+= dy;
         dy=0;
 
     }
