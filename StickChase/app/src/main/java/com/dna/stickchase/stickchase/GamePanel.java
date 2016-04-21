@@ -82,6 +82,13 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
         }
 
         return super.onTouchEvent(event);
+
+       /* if(event.getAction()==MotionEvent.ACTION_UP)
+        {
+            player.resetDYA();
+            player.update();
+        }
+        */
     }
     public void update()
     {

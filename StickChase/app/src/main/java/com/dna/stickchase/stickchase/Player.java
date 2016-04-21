@@ -17,7 +17,7 @@ public class Player extends GameObject {
 
     public Player(Bitmap res, int w, int h, int numFrames)
     {
-        x = 100;
+        x = 200;
         y = GamePanel.HEIGHT-600;
         dy = 0;
         score = 0;
@@ -54,15 +54,19 @@ public class Player extends GameObject {
         if(up){
             dy += (int)(dya-=5);
         }
-       /* else{
-            dy = (int)(dya+=0.5);
-        }
-*/
+
        if(dy>20)dy=14;
         if(dy<-20)dy = -14;
 
         y+= dy;
-        dy=0;
+        dy = 0;
+        /*dy +=12;
+       if(dy)
+        {
+            y=dy;
+            dy=0;
+        }
+*/
 
     }
     public void draw(Canvas canvas)
