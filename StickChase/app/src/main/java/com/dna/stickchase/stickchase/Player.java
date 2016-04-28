@@ -52,21 +52,36 @@ public class Player extends GameObject {
         animation.update();
 
         if(up){
-            dy += (int)(dya-=5);
+            dy += (int)(dya-=300);
         }
 
-       if(dy>20)dy=14;
-        if(dy<-20)dy = -14;
+       if(dy>20)dy=25;
+        if(dy<-20)dy = -25;
 
-        y+= dy;
-        dy = 0;
-        /*dy +=12;
-       if(dy)
+
+            y += dy;
+            dy = 0;
+            dy += 20;
+
+
+
+       /* if(y <= GamePanel.HEIGHT-600) {
+            y+=dy;
+            dy+=20;
+            dy++;
+
+
+        }
+
+
+
+     /*  if(dy)
         {
             y=dy;
             dy=0;
         }
 */
+
 
     }
     public void draw(Canvas canvas)
