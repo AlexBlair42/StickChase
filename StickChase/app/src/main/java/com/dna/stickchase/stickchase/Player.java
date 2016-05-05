@@ -50,51 +50,24 @@ public class Player extends GameObject {
         }
         animation.update();
 
-        if(up)
+        if(up && y != GamePanel.HEIGHT-600)
         {
-            dy -= 1;
+            dy -= 300;
         }
 
         else{
-            dy += 1;
+            dy += 20;
+            if(y == GamePanel.HEIGHT-599){
+                dy=0;
+            }
         }
 
-        if(dy>14)dy = 14;
-        if(dy<-14)dy=-14;
+        if(dy>20)dy = 25;
+        if(dy<-20)dy=-25;
 
-        y+= dy*2;
+        y+= dy;
         dy=0;
 
-       /* if(up){
-            dy += (int)(dy-=300);
-        }
-
-       if(dy>20)dy=25;
-        if(dy<-20)dy = -25;
-
-
-    y += dy;
-    dy = 0;
-    dy += 20;
-
-*/
-
-       /* if(y <= GamePanel.HEIGHT-600) {
-            y+=dy;
-            dy+=20;
-            dy++;
-
-
-        }
-
-
-
-     /*  if(dy)
-        {
-            y=dy;
-            dy=0;
-        }
-*/
 
 
     }
