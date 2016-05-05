@@ -14,6 +14,7 @@ public class Player extends GameObject {
     private long startTime;
 
 
+
     public Player(Bitmap res, int w, int h, int numFrames)
     {
         x = 200;
@@ -50,17 +51,14 @@ public class Player extends GameObject {
         }
         animation.update();
 
-        if(up && y != GamePanel.HEIGHT-600)
+        if(up)
         {
             dy -= 300;
         }
-
-        else{
-            dy += 20;
-            if(y == GamePanel.HEIGHT-599){
+        dy += 20;
+        if(up && y == GamePanel.HEIGHT-599){
                 dy=0;
             }
-        }
 
         if(dy>20)dy = 25;
         if(dy<-20)dy=-25;
