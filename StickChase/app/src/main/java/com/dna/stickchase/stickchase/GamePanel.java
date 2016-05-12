@@ -14,7 +14,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
     private Background bg;
     public static final int WIDTH = 2048;
     public static final int HEIGHT = 1536;
-    public static final int MOVESPEED = -10;
+    public static final int MOVESPEED = -15;
     private Player player;
 
 
@@ -86,12 +86,6 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
 
         return super.onTouchEvent(event);
 
-       /* if(event.getAction()==MotionEvent.ACTION_UP)
-        {
-            player.resetDYA();
-            player.update();
-        }
-        */
     }
     public void update()
     {
