@@ -56,8 +56,8 @@ public class Player extends GameObject {
             dy -= 300;
         }
         dy += 20;
-        if(up && y == GamePanel.HEIGHT-599){
-                dy=0;
+        if(y >= GamePanel.HEIGHT-599){
+            y = GamePanel.HEIGHT-600;
             }
 
         if(dy>20)dy = 25;
